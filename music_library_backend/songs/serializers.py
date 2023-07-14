@@ -13,9 +13,9 @@ class LikeSerializer(serializers.Serializer):
 class SongSerializer(serializers.ModelSerializer):
     class Meta:
         model=Song
-        fields=["title", "album", "artist", "release_date", "genre"]
+        fields=["title", "album", "artist", "release_date", "genre", "like", "id"]
 
 class SongDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model=Song
-        fields=["title", "album", "artist", "release_date", "genre", "like"]
+        fields=["title", "album", "artist", "release_date", "genre", "like", "id"]
